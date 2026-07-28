@@ -114,8 +114,11 @@ After completing this repository, students will be able to:
 # 👨‍🏫 Maintained By
 
 **Smit Tarapara**
+
 Assistant Professor
+
 Silver Oak University
+
 Ahmedabad, Gujarat, India
 
 ---
