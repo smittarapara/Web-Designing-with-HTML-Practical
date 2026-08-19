@@ -1,0 +1,165 @@
+/* General Page Styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+    color: #333;
+}
+
+
+/* Header */
+
+header {
+    background-color: lightblue;
+    padding: 30px;
+    border-bottom: 4px solid darkblue;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/* Welcome Section */
+
+.welcome-section {
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-left: 6px solid darkgreen;
+    border-radius: 8px;
+}
+
+
+/* Content Sections */
+
+.content {
+    width: 80%;
+    margin: 25px auto;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.content h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+}
+
+.content h3 {
+    color: #444;
+}
+
+
+/* Paragraph */
+
+.content p,
+.welcome-section p {
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* List */
+
+.content li {
+    margin: 10px;
+    padding: 5px;
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background-color: #e8f1ff;
+    border: 1px solid #b5cbe8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #1d4ed8;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .content,
+    .welcome-section {
+        width: 90%;
+    }
+}
