@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table - Rowspan and Colspan</title>
+</head>
+
+<body>
+
+    <h1>Student Information</h1>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <!-- Column Span -->
+        <tr>
+            <th colspan="4">Student Details</th>
+        </tr>
+
+        <tr>
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rahul</td>
+            <td>BCA</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Priya</td>
+            <td>BCA</td>
+            <td>90</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <h1>Class Schedule</h1>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+        </tr>
+
+        <!-- Row Span -->
+        <tr>
+            <th rowspan="2">Monday</th>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Web Designing Practical</td>
+            <td>Lab</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td>Python</td>
+            <td colspan="2">Programming Lab</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
