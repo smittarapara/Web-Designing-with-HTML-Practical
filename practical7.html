@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio and Video in HTML</title>
+</head>
+
+<body>
+
+    <h1 align="center">🎵 Audio and 🎬 Video in HTML</h1>
+
+    <p align="center">
+        <b>Web Designing Practical</b>
+    </p>
+
+    <hr>
+
+
+    <!-- ================= AUDIO ================= -->
+
+    <h2>1. Audio Element</h2>
+
+    <p>
+        The <b>&lt;audio&gt;</b> element is used to
+        add audio/music to a webpage.
+    </p>
+
+    <h3>Play Audio</h3>
+
+    <audio controls>
+
+        <source
+            src="https://www.w3schools.com/html/horse.ogg"
+            type="audio/ogg">
+
+        <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+
+    <hr>
+
+
+    <!-- ================= AUDIO ATTRIBUTES ================= -->
+
+    <h2>2. Audio Attributes</h2>
+
+    <ul>
+
+        <li>
+            <b>controls</b> - Displays play, pause and volume controls.
+        </li>
+
+        <li>
+            <b>autoplay</b> - Starts the audio automatically.
+        </li>
+
+        <li>
+            <b>loop</b> - Repeats the audio again and again.
+        </li>
+
+        <li>
+            <b>muted</b> - Starts the audio without sound.
+        </li>
+
+    </ul>
+
+
+    <h3>Audio with Loop</h3>
+
+    <audio controls loop>
+
+        <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <hr>
+
+
+    <!-- ================= VIDEO ================= -->
+
+    <h2>3. Video Element</h2>
+
+    <p>
+        The <b>&lt;video&gt;</b> element is used to
+        add a video to a webpage.
+    </p>
+
+    <h3>Play Video</h3>
+
+    <video width="500" controls>
+
+        <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4">
+
+        Your browser does not support the video element.
+
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================= VIDEO ATTRIBUTES ================= -->
+
+    <h2>4. Video Attributes</h2>
+
+    <ul>
+
+        <li>
+            <b>controls</b> - Displays video controls.
+        </li>
+
+        <li>
+            <b>width</b> - Sets the width of the video.
+        </li>
+
+        <li>
+            <b>height</b> - Sets the height of the video.
+        </li>
+
+        <li>
+            <b>autoplay</b> - Starts the video automatically.
+        </li>
+
+        <li>
+            <b>loop</b> - Repeats the video.
+        </li>
+
+        <li>
+            <b>muted</b> - Starts the video without sound.
+        </li>
+
+    </ul>
+
+
+    <hr>
+
+
+    <!-- ================= AUDIO + VIDEO ================= -->
+
+    <h2>5. Audio and Video Together</h2>
+
+    <p>
+        HTML allows us to add both audio and video
+        elements on the same webpage.
+    </p>
+
+    <audio controls>
+        <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg">
+    </audio>
+
+    <br><br>
+
+    <video width="400" controls>
+        <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4">
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================= IMPORTANT TAGS ================= -->
+
+    <h2>6. Important HTML Tags</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Tag / Attribute</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>&lt;audio&gt;</td>
+            <td>Adds audio to webpage</td>
+        </tr>
+
+        <tr>
+            <td>&lt;video&gt;</td>
+            <td>Adds video to webpage</td>
+        </tr>
+
+        <tr>
+            <td>&lt;source&gt;</td>
+            <td>Specifies the media file</td>
+        </tr>
+
+        <tr>
+            <td>controls</td>
+            <td>Displays media controls</td>
+        </tr>
+
+        <tr>
+            <td>autoplay</td>
+            <td>Automatically plays media</td>
+        </tr>
+
+        <tr>
+            <td>loop</td>
+            <td>Repeats the media</td>
+        </tr>
+
+        <tr>
+            <td>muted</td>
+            <td>Mutes the media</td>
+        </tr>
+
+    </table>
+
+
+    <hr>
+
+
+    <!-- ================= BASIC SYNTAX ================= -->
+
+    <h2>7. Basic Syntax</h2>
+
+    <h3>Audio</h3>
+
+    <p>
+        &lt;audio controls&gt;<br>
+        &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+        &lt;/audio&gt;
+    </p>
+
+
+    <h3>Video</h3>
+
+    <p>
+        &lt;video controls&gt;<br>
+        &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+        &lt;/video&gt;
+    </p>
+
+
+    <hr>
+
+
+    <p align="center">
+        <b>Web Designing Practical</b><br>
+        Audio and Video Elements<br>
+        Prof. Smit Tarapara
+    </p>
+
+</body>
+
+</html>
