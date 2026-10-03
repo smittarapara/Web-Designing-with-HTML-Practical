@@ -1,0 +1,183 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Images and Image Maps</title>
+</head>
+
+<body>
+
+    <h1 align="center">🇮🇳 Explore India</h1>
+
+    <p align="center">
+        <b>Images and Image Maps in HTML</b>
+    </p>
+
+    <hr>
+
+
+    <!-- ================= IMAGE ================= -->
+
+    <h2>1. Image in HTML</h2>
+
+    <p>
+        The <b>&lt;img&gt;</b> tag is used to display an image
+        on a webpage.
+    </p>
+
+    <!-- Embedded Image -->
+    <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450'%3E%3Crect width='600' height='450' fill='%23dff4ff'/%3E%3Ctext x='300' y='40' text-anchor='middle' font-family='Arial' font-size='28' font-weight='bold' fill='%23173f73'%3EINDIA MAP%3C/text%3E%3Cpolygon points='250,70 340,90 390,140 370,200 430,260 380,310 350,390 300,420 250,380 230,310 180,270 130,210 150,150 200,120' fill='%23ff9933' stroke='white' stroke-width='5'/%3E%3Cpolygon points='150,150 200,120 250,70 340,90 390,140 370,200 300,205 240,180 190,215 130,210' fill='%23ff9933' stroke='white' stroke-width='3'/%3E%3Cpolygon points='130,210 190,215 240,180 300,205 270,275 200,285 145,255' fill='%23138808' stroke='white' stroke-width='3'/%3E%3Cpolygon points='300,205 370,200 430,260 380,310 320,290 270,275' fill='%239b59b6' stroke='white' stroke-width='3'/%3E%3Cpolygon points='200,285 270,275 320,290 350,390 300,420 250,380 230,310' fill='%23ff6f91' stroke='white' stroke-width='3'/%3E%3Ctext x='280' y='145' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold'%3ENORTH%3C/text%3E%3Ctext x='190' y='245' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold' fill='white'%3EWEST%3C/text%3E%3Ctext x='350' y='255' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold' fill='white'%3EEAST%3C/text%3E%3Ctext x='275' y='340' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold' fill='white'%3ESOUTH%3C/text%3E%3C/svg%3E"
+        width="600"
+        height="450"
+        alt="Map of India">
+
+
+    <hr>
+
+
+    <!-- ================= IMAGE MAP ================= -->
+
+    <h2>2. Image Map</h2>
+
+    <p>
+        An <b>Image Map</b> allows us to make different
+        parts of an image clickable.
+    </p>
+
+    <p>
+        <b>Click on a region of the map:</b>
+    </p>
+
+
+    <!-- Image connected with Image Map -->
+
+    <img
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450'%3E%3Crect width='600' height='450' fill='%23dff4ff'/%3E%3Ctext x='300' y='40' text-anchor='middle' font-family='Arial' font-size='28' font-weight='bold' fill='%23173f73'%3ECLICK A REGION%3C/text%3E%3Cpolygon points='250,70 340,90 390,140 370,200 430,260 380,310 350,390 300,420 250,380 230,310 180,270 130,210 150,150 200,120' fill='%23ff9933' stroke='white' stroke-width='5'/%3E%3Cpolygon points='150,150 200,120 250,70 340,90 390,140 370,200 300,205 240,180 190,215 130,210' fill='%23ff9933' stroke='white' stroke-width='3'/%3E%3Cpolygon points='130,210 190,215 240,180 300,205 270,275 200,285 145,255' fill='%23138808' stroke='white' stroke-width='3'/%3E%3Cpolygon points='300,205 370,200 430,260 380,310 320,290 270,275' fill='%239b59b6' stroke='white' stroke-width='3'/%3E%3Cpolygon points='200,285 270,275 320,290 350,390 300,420 250,380 230,310' fill='%23ff6f91' stroke='white' stroke-width='3'/%3E%3Ctext x='280' y='145' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold'%3ENORTH%3C/text%3E%3Ctext x='190' y='245' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold' fill='white'%3EWEST%3C/text%3E%3Ctext x='350' y='255' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold' fill='white'%3EEAST%3C/text%3E%3Ctext x='275' y='340' text-anchor='middle' font-family='Arial' font-size='17' font-weight='bold' fill='white'%3ESOUTH%3C/text%3E%3C/svg%3E"
+        width="600"
+        height="450"
+        alt="Interactive Map of India"
+        usemap="#indiaMap">
+
+
+    <!-- Map Definition -->
+
+    <map name="indiaMap">
+
+        <!-- North India -->
+        <area
+            shape="poly"
+            coords="250,70,340,90,390,140,370,200,300,205,240,180,200,120"
+            href="https://en.wikipedia.org/wiki/North_India"
+            target="_blank"
+            alt="North India">
+
+        <!-- West India -->
+        <area
+            shape="poly"
+            coords="130,210,190,215,240,180,300,205,270,275,200,285,145,255"
+            href="https://en.wikipedia.org/wiki/Western_India"
+            target="_blank"
+            alt="West India">
+
+        <!-- East India -->
+        <area
+            shape="poly"
+            coords="300,205,370,200,430,260,380,310,320,290,270,275"
+            href="https://en.wikipedia.org/wiki/East_India"
+            target="_blank"
+            alt="East India">
+
+        <!-- South India -->
+        <area
+            shape="poly"
+            coords="200,285,270,275,320,290,350,390,300,420,250,380,230,310"
+            href="https://en.wikipedia.org/wiki/South_India"
+            target="_blank"
+            alt="South India">
+
+    </map>
+
+
+    <hr>
+
+
+    <!-- ================= EXPLANATION ================= -->
+
+    <h2>3. Important Tags</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Displays an image</td>
+        </tr>
+
+        <tr>
+            <td>&lt;map&gt;</td>
+            <td>Creates an image map</td>
+        </tr>
+
+        <tr>
+            <td>&lt;area&gt;</td>
+            <td>Creates a clickable area</td>
+        </tr>
+
+        <tr>
+            <td>usemap</td>
+            <td>Connects the image with the map</td>
+        </tr>
+
+    </table>
+
+
+    <hr>
+
+
+    <h2>4. How It Works?</h2>
+
+    <ol>
+
+        <li>
+            Use <b>&lt;img&gt;</b> to display the image.
+        </li>
+
+        <li>
+            Add <b>usemap="#indiaMap"</b> to the image.
+        </li>
+
+        <li>
+            Create <b>&lt;map name="indiaMap"&gt;</b>.
+        </li>
+
+        <li>
+            Use <b>&lt;area&gt;</b> to create clickable regions.
+        </li>
+
+        <li>
+            Click on a region to open its webpage.
+        </li>
+
+    </ol>
+
+
+    <hr>
+
+
+    <p align="center">
+        <b>Web Designing Practical</b><br>
+        Images and Image Maps<br>
+        Prof. Smit Tarapara
+    </p>
+
+
+</body>
+
+</html>
+```
