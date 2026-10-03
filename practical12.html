@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Responsive Navigation Bar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        /* Page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #173f73;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+
+        /* Website Name */
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav-links a:hover {
+            color: yellow;
+        }
+
+
+        /* Main Section */
+        .main {
+            padding: 40px;
+            text-align: center;
+            background-color: #f2f7ff;
+        }
+
+
+        .main h1 {
+            color: #173f73;
+        }
+
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+
+        .card h2 {
+            color: #138808;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #173f73;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                margin-top: 15px;
+            }
+
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Web Designing
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Courses</a>
+
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <h1>
+            Welcome to Web Designing
+        </h1>
+
+        <p>
+            Learn HTML and CSS to create beautiful webpages.
+        </p>
+
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h2>HTML</h2>
+
+                <p>
+                    HTML is used to create
+                    the structure of a webpage.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>CSS</h2>
+
+                <p>
+                    CSS is used to design
+                    and style a webpage.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Responsive Design</h2>
+
+                <p>
+                    Responsive design makes
+                    webpages work on different
+                    screen sizes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Web Designing Practical
+        </p>
+
+        <p>
+            Prof. Smit Tarapara
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
