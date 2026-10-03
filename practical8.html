@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">Student Registration Form</h1>
+
+    <p align="center">
+        <b>Please fill in the following details</b>
+    </p>
+
+    <hr>
+
+
+    <form>
+
+        <!-- ================= PERSONAL DETAILS ================= -->
+
+        <fieldset>
+
+            <legend>
+                <b>Personal Details</b>
+            </legend>
+
+            <br>
+
+            <label>Full Name:</label>
+            <input
+                type="text"
+                name="fullname"
+                placeholder="Enter your full name"
+                required>
+
+            <br><br>
+
+
+            <label>Email:</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <br><br>
+
+
+            <label>Password:</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter password"
+                required>
+
+            <br><br>
+
+
+            <label>Date of Birth:</label>
+            <input
+                type="date"
+                name="dob">
+
+            <br><br>
+
+
+            <label>Gender:</label>
+
+            <input
+                type="radio"
+                name="gender"
+                value="male">
+            Male
+
+            <input
+                type="radio"
+                name="gender"
+                value="female">
+            Female
+
+            <input
+                type="radio"
+                name="gender"
+                value="other">
+            Other
+
+            <br><br>
+
+
+            <label>Mobile Number:</label>
+            <input
+                type="tel"
+                name="mobile"
+                placeholder="Enter mobile number">
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ================= ACADEMIC DETAILS ================= -->
+
+        <fieldset>
+
+            <legend>
+                <b>Academic Details</b>
+            </legend>
+
+            <br>
+
+
+            <label>Course:</label>
+
+            <select name="course">
+
+                <option value="">
+                    -- Select Course --
+                </option>
+
+                <option value="bca">
+                    BCA
+                </option>
+
+                <option value="bca-honors">
+                    BCA Honors
+                </option>
+
+                <option value="bsc-ds">
+                    B.Sc. Data Science
+                </option>
+
+                <option value="bsc-it">
+                    B.Sc. IT
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <label>Semester:</label>
+
+            <select name="semester">
+
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+
+            </select>
+
+            <br><br>
+
+
+            <label>Skills:</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                name="skills"
+                value="html">
+            HTML
+
+            <br>
+
+            <input
+                type="checkbox"
+                name="skills"
+                value="css">
+            CSS
+
+            <br>
+
+            <input
+                type="checkbox"
+                name="skills"
+                value="javascript">
+            JavaScript
+
+            <br>
+
+            <input
+                type="checkbox"
+                name="skills"
+                value="python">
+            Python
+
+            <br><br>
+
+
+            <label>Upload Photo:</label>
+
+            <input
+                type="file"
+                name="photo">
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ================= ADDRESS ================= -->
+
+        <fieldset>
+
+            <legend>
+                <b>Address Details</b>
+            </legend>
+
+            <br>
+
+            <label>Address:</label>
+
+            <br>
+
+            <textarea
+                name="address"
+                rows="5"
+                cols="40"
+                placeholder="Enter your complete address">
+            </textarea>
+
+            <br><br>
+
+
+            <label>City:</label>
+
+            <input
+                type="text"
+                name="city"
+                placeholder="Enter city">
+
+            <br><br>
+
+
+            <label>State:</label>
+
+            <select name="state">
+
+                <option>Gujarat</option>
+                <option>Maharashtra</option>
+                <option>Rajasthan</option>
+                <option>Madhya Pradesh</option>
+                <option>Other</option>
+
+            </select>
+
+            <br><br>
+
+
+            <label>PIN Code:</label>
+
+            <input
+                type="number"
+                name="pincode"
+                placeholder="Enter PIN code">
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ================= BUTTONS ================= -->
+
+        <fieldset>
+
+            <legend>
+                <b>Submit Form</b>
+            </legend>
+
+            <br>
+
+            <input
+                type="submit"
+                value="Register">
+
+            &nbsp;&nbsp;
+
+            <input
+                type="reset"
+                value="Reset">
+
+        </fieldset>
+
+    </form>
+
+
+    <hr>
+
+
+    <!-- ================= FORM CONTROLS ================= -->
+
+    <h2 align="center">HTML Form Controls Used</h2>
+
+    <table
+        border="1"
+        cellpadding="10"
+        align="center">
+
+        <tr>
+            <th>Control</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>text</td>
+            <td>Enter text</td>
+        </tr>
+
+        <tr>
+            <td>email</td>
+            <td>Enter email address</td>
+        </tr>
+
+        <tr>
+            <td>password</td>
+            <td>Enter password</td>
+        </tr>
+
+        <tr>
+            <td>radio</td>
+            <td>Select one option</td>
+        </tr>
+
+        <tr>
+            <td>checkbox</td>
+            <td>Select multiple options</td>
+        </tr>
+
+        <tr>
+            <td>select</td>
+            <td>Select an option from a list</td>
+        </tr>
+
+        <tr>
+            <td>textarea</td>
+            <td>Enter multiple lines of text</td>
+        </tr>
+
+        <tr>
+            <td>file</td>
+            <td>Upload a file</td>
+        </tr>
+
+        <tr>
+            <td>submit</td>
+            <td>Submit the form</td>
+        </tr>
+
+        <tr>
+            <td>reset</td>
+            <td>Clear the form</td>
+        </tr>
+
+    </table>
+
+
+    <br><br>
+
+
+    <p align="center">
+        <b>Web Designing Practical</b><br>
+        Student Registration Form<br>
+        Prof. Smit Tarapara
+    </p>
+
+
+</body>
+
+</html>
